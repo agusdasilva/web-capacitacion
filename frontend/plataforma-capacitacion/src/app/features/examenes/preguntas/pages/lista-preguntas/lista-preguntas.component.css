@@ -1,0 +1,42 @@
+.contenedor-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.lista-preguntas {
+  flex: 1 1 60%;
+  min-width: 300px;
+}
+
+.pregunta-card {
+  background: #f7f7f7;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.panel-agregar {
+  flex: 1 1 30%;
+  min-width: 200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.boton-agregar {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.boton-agregar:hover {
+  background-color: #0056b3;
+}

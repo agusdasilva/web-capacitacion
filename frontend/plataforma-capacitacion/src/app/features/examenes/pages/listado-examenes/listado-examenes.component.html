@@ -1,0 +1,13 @@
+<div class="lista-examenes">
+    <h2>Exámenes disponibles</h2>
+    <div *ngIf="cargando">Cargando...</div>
+    <div *ngIf="!cargando && examenes.length === 0">No hay exámenes disponibles.</div>
+    <ul *ngIf="!cargando">
+      <li *ngFor="let ex of examenes" (click)="iniciar(ex)" class="examen-item">
+        <strong>{{ ex.titulo }}</strong>
+        <p *ngIf="ex.descripcion">{{ ex.descripcion }}</p>
+        <small>Duración: {{ ex.duracion_total / 60 }} min</small>
+      </li>
+    </ul>
+  </div>
+  

@@ -1,0 +1,28 @@
+<h2>Agregar Pregunta</h2>
+
+<form [formGroup]="formulario" (ngSubmit)="crearPregunta()">
+  <div>
+    <label>Texto de la pregunta:</label>
+    <input type="text" formControlName="texto" />
+  </div>
+
+  <div formArrayName="opciones">
+    <label>Opciones:</label>
+    <div *ngFor="let opcion of opciones.controls; let i = index">
+      <input [formControlName]="i" placeholder="Opción {{ i + 1 }}" />
+    </div>
+    <button type="button" (click)="agregarOpcion()">+ Agregar opción</button>
+  </div>
+
+  <div>
+    <label>Respuesta correcta:</label>
+    <input type="text" formControlName="respuesta_correcta" />
+  </div>
+
+  <div>
+    <label>Tiempo máximo (en segundos):</label>
+    <input type="number" formControlName="tiempo_maximo" />
+  </div>
+
+  <button type="submit" [disabled]="formulario.invalid">Guardar Pregunta</button>
+</form>

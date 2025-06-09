@@ -1,0 +1,27 @@
+<div class="contenedor-flex">
+  <!-- Lista de preguntas -->
+  <div class="lista-preguntas">
+    <h2>Preguntas para el examen {{ examenId }}</h2>
+
+    <div *ngIf="cargando">Cargando preguntas…</div>
+    <div *ngIf="!cargando && error" class="error">{{ error }}</div>
+    <div *ngIf="!cargando && preguntas.length === 0">No hay preguntas para este examen.</div>
+
+    <div *ngIf="!cargando && preguntas.length">
+      <div *ngFor="let p of preguntas" class="pregunta-card">
+        <p class="pregunta-texto">{{ p.texto }}</p>
+        <ul class="opciones">
+          <li *ngFor="let opc of p.opciones">{{ opc }}</li>
+        </ul>
+        <small *ngIf="p.tiempo_maximo">Tiempo máximo: {{ p.tiempo_maximo }}s</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botón para agregar preguntas -->
+  <div class="panel-agregar">
+    <a [routerLink]="['/preguntas', examenId, 'agregar']" class="boton-agregar">
+      + Agregar pregunta
+    </a>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+# Node
+node_modules/
+npm-debug.log
+
+# Entornos
+.env
+
+# IDEs y editores
+.vscode/
+.idea/
+
+# Salidas de build
+dist/
+build/
+
+# Archivos temporales
+*.log

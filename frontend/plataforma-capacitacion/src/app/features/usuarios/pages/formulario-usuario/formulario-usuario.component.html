@@ -1,0 +1,41 @@
+<div class="form-usuario">
+  <h2>{{ modoEditar ? 'Editar Usuario' : 'Crear Usuario' }}</h2>
+
+  <form [formGroup]="formulario" (ngSubmit)="guardar()">
+    <div>
+      <label>Nombre</label>
+      <input type="text" formControlName="nombre" />
+    </div>
+
+    <div>
+      <label>Email</label>
+      <input type="email" formControlName="email" />
+      <p *ngIf="emailValido()" class="msg-success">✔️ Email válido</p>
+      <p *ngIf="emailInvalido()" class="msg-error">❌ Email inválido</p>
+    </div>
+
+    <div>
+      <label>Rol</label>
+      <select formControlName="rol">
+        <option value="admin">Admin</option>
+        <option value="vendedor">Vendedor</option>
+      </select>
+    </div>
+
+    <div>
+      <label>{{ modoEditar ? 'Nueva contraseña (opcional)' : 'Contraseña' }}</label>
+      <input type="password" formControlName="password" />
+    </div>
+
+    <div *ngIf="formulario.get('password')?.value">
+      <label>Repetir contraseña</label>
+      <input type="password" formControlName="repetirPassword" />
+      <p *ngIf="contrasenasIguales()" class="msg-success">✔️ Las contraseñas coinciden</p>
+      <p *ngIf="contrasenasDistintas()" class="msg-error">❌ Las contraseñas no coinciden</p>
+    </div>
+
+    <button type="submit">
+      {{ modoEditar ? 'Actualizar' : 'Crear' }}
+    </button>
+  </form>
+</div>
