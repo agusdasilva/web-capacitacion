@@ -1,0 +1,27 @@
+<nav class="navbar">
+  <div class="navbar__left">
+    <!-- Título clickeable -->
+    <div class="navbar__brand">
+      <a routerLink="/dashboard">ElÁguila Capacitaciones</a>
+    </div>
+
+    <!-- Navegación -->
+    <ul class="navbar__links">
+      <li><a routerLink="/dashboard" routerLinkActive="active">Inicio</a></li>
+      <li><a routerLink="/examenes" routerLinkActive="active">Exámenes</a></li>
+      <li><a routerLink="/guias" routerLinkActive="active">Guías</a></li>
+      <li><a routerLink="/videos" routerLinkActive="active">Videos</a></li>
+      <li><a routerLink="/foro" routerLinkActive="active">Foro</a></li>
+      <li><a routerLink="/notificaciones" routerLinkActive="active">Notificaciones</a></li>
+      <li *ngIf="auth.isAdmin()">
+        <a routerLink="/usuarios" routerLinkActive="active">Usuarios</a>
+      </li>
+      
+    </ul>
+  </div>
+
+  <!-- Cierre de sesión -->
+  <div class="navbar__right">
+    <button class="navbar__logout" (click)="logout()">Cerrar sesión</button>
+  </div>
+</nav>

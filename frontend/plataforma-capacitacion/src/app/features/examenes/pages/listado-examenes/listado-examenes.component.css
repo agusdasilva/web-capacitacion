@@ -1,0 +1,21 @@
+/* lista-examenes.component.css */
+.lista-examenes {
+    padding: 1rem;
+  }
+  .examen-item {
+    list-style: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: box-shadow .2s;
+  }
+  .examen-item:hover {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  .examen-item p, .examen-item small {
+    margin: 0.25rem 0;
+    color: #555;
+  }
+  

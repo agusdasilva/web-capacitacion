@@ -1,0 +1,16 @@
+<div class="dashboard">
+  <section class="bienvenida">
+    <h1>¡Bienvenido, {{ auth.getUsuario().nombre }}!</h1>
+    <p>
+      Esta plataforma fue creada para ayudarte a mejorar tus conocimientos técnicos y comerciales
+      sobre los productos de El Águila. Accedé a exámenes, guías, videos y más desde aquí.
+    </p>
+  </section>
+
+  <section class="quick-links">
+    <app-card titulo="Mis exámenes" (click)="navigate('/examenes')"></app-card>
+    <app-card titulo="Mis resultados" (click)="navigate('/resultados')"></app-card>
+    <app-card titulo="Guías" (click)="navigate('/guias')"></app-card>
+    <app-card titulo="Videos" (click)="navigate('/videos')"></app-card>
+  </section>
+</div>

@@ -1,0 +1,21 @@
+.app-content {
+    padding-bottom: 3rem; /* espacio del footer */
+  }
+
+  /* 🔧 Reset básico del navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #bebebe; /* color de fondo general si querés mantenerlo gris */
+  font-family: Arial, sans-serif;
+}
+
+
+
+  

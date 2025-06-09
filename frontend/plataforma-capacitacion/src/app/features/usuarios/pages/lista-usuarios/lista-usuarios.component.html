@@ -1,0 +1,34 @@
+<div class="usuarios-container">
+    <h2>Gestión de Usuarios</h2>
+  
+    <button class="boton-rojo" (click)="crear()">+ Nuevo Usuario</button>
+  
+    <table class="usuarios-tabla" *ngIf="usuarios.length; else sinUsuarios">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Rol</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let u of usuarios">
+          <td>{{ u.id }}</td>
+          <td>{{ u.nombre }}</td>
+          <td>{{ u.email }}</td>
+          <td>{{ u.rol }}</td>
+          <td>
+            <button class="boton-editar" (click)="editar(u.id)">Editar</button>
+            <button class="boton-eliminar" (click)="eliminar(u.id)">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <ng-template #sinUsuarios>
+      <p>No hay usuarios cargados aún.</p>
+    </ng-template>
+  </div>
+  
