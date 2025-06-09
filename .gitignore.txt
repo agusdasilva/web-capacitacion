@@ -1,17 +1,87 @@
-# Node
+# ========================
+# Node.js (backend & frontend)
+# ========================
 node_modules/
-npm-debug.log
 
-# Entornos
+# ========================
+# Logs
+# ========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ========================
+# Runtime data
+# ========================
+pids/
+*.pid
+*.seed
+lib-cov/
+
+# ========================
+# Coverage directory
+# ========================
+coverage/
+*.lcov
+.nyc_output/
+
+# ========================
+# Build output
+# ========================
+dist/
+build/
+out/
+
+# ========================
+# Framework-specific
+# ========================
+# Angular
+.angular/
+
+# Next.js
+.next/
+out/
+
+# Gatsby
+.cache/
+public/
+
+# Storybook
+out-storybook/
+
+# Bower
+bower_components/
+
+# Compiled binary addons
+build/Release/
+
+# ========================
+# Environment variables
+# ========================
 .env
+.env.*.local
 
-# IDEs y editores
+# ========================
+# IDEs and editors
+# ========================
 .vscode/
 .idea/
 
-# Salidas de build
-dist/
-build/
+# ========================
+# OS-generated files
+# ========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
 
-# Archivos temporales
-*.log
+# ========================
+# Miscellaneous
+# ========================
+*.tgz
+.cache/
+.tmp/
+*.sw?
+*~
