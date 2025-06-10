@@ -1,0 +1,9 @@
+:root {
+  --color-brand: #ba0001;
+  --color-brand-hover: #a30000;
+  --color-danger: #dc3545;
+  --color-danger-hover: #b52e3a;
+  --color-bg-gray: #bebebe;
+  --color-border-gray: #e0e0e0;
+  --color-light-gray: #f3f3f3;
+}

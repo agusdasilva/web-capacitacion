@@ -1,6 +1,8 @@
+@import './app/shared/styles/colors.css';
+
 .app-content {
-    padding-bottom: 3rem; /* espacio del footer */
-  }
+  padding-bottom: 3rem; /* espacio del footer */
+}
 
   /* 🔧 Reset básico del navegador */
 * {
@@ -9,10 +11,11 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
-  background-color: #bebebe; /* color de fondo general si querés mantenerlo gris */
+  background-color: var(--color-bg-gray); /* color de fondo general */
   font-family: Arial, sans-serif;
 }
 
