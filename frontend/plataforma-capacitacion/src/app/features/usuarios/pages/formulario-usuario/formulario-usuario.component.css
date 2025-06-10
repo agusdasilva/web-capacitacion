@@ -2,7 +2,7 @@
     max-width: 600px;
     margin: 2rem auto;
     padding: 2rem;
-    background-color: #bebebe;
+    background-color: var(--color-bg-gray);
     color: #111;
     border: 1px solid #000000;
     border-radius: 8px;
@@ -31,7 +31,7 @@
   }
   
   button {
-    background-color: #dc3545;
+    background-color: var(--color-danger);
     color: white;
     border: none;
     padding: 0.8rem 1.6rem;
@@ -42,7 +42,7 @@
   }
   
   button:hover {
-    background-color: #b52e3a;
+    background-color: var(--color-danger-hover);
   }
   
   .msg-success {
