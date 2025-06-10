@@ -2,7 +2,7 @@
   background-color: #232323; /* fondo oscuro */
   color: #f1f1f1; /* texto claro */
   padding: 2rem 3rem;
-  margin-top: 4rem;
+  margin-top: 0; /* eliminado espacio que generaba una franja de color */
 }
 
 .footer-content {
