@@ -1,0 +1,50 @@
+/* Contenedor principal centrado */
+.login-container {
+  max-width: 360px;
+  margin: 3rem auto;
+  padding: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--color-brand);
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.error {
+  color: var(--color-danger);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.login-container button {
+  width: 100%;
+  background-color: var(--color-brand);
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+  background-color: var(--color-brand-hover);
+}
