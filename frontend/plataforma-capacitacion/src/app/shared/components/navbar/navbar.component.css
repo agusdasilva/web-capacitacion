@@ -41,7 +41,7 @@
 .navbar__links a.active,
 .navbar__links a:hover {
   color: #fff;
-  border-bottom: 2px solid #dc3545;
+  border-bottom: 2px solid #ba0001;
 }
 
 .navbar__right {
@@ -50,7 +50,7 @@
 }
 
 .navbar__logout {
-  background-color: #dc3545;
+  background-color: #ba0001;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -61,7 +61,7 @@
 }
 
 .navbar__logout:hover {
-  background-color: #c82333;
+  background-color: #a30000;
 }
   
 .navbar__brand a {
@@ -73,6 +73,6 @@
 }
 
 .navbar__brand a:hover {
-  color: #dc3545;
+  color: #ba0001;
 }
 
