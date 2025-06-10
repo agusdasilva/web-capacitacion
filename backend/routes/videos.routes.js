@@ -3,9 +3,14 @@ const router = express.Router();
 const db = require('../db');
 const { verificarToken, soloAdmins } = require('../middlewares/auth.middleware');
 
-// GET /api/videos - Ver todos los videos disponibles
+// GET /api/videos - Ver videos visibles para los usuarios
 router.get('/videos', verificarToken, (req, res) => {
-  const sql = 'SELECT id, titulo, url, duracion FROM videos';
+  const sql = `
+    SELECT id, titulo, url, duracion
+    FROM videos
+    WHERE visible_para_usuario = true
+    ORDER BY id DESC
+  `;
   db.query(sql, (err, results) => {
     if (err) return res.status(500).json({ mensaje: 'Error al obtener videos' });
     res.json(results);
