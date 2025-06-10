@@ -6,8 +6,14 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class CapitalizarPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(value: unknown): unknown {
+    if (typeof value !== 'string') {
+      return value;
+    }
+
+    return value
+      .toLowerCase()
+      .replace(/\b\w/g, (first) => first.toUpperCase());
   }
 
 }
