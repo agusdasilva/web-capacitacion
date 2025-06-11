@@ -4,7 +4,7 @@
   align-items: center;
   background-color: #232323; /* fondo negro */
   border-bottom: 1px solid #333;
-  padding: 1.4rem 2rem;
+  padding: 1rem 2rem;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -77,6 +77,6 @@
 }
 
 .navbar__logo {
-  height: 40px;
+  height: 60px;
 }
 
