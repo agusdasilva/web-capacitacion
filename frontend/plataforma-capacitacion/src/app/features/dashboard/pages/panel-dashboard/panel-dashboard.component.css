@@ -19,6 +19,7 @@
   border: 2px solid var(--color-black);
   width: 100%;
   color: #111;
+  max-width: 800px;
 }
 
 .bienvenida {
