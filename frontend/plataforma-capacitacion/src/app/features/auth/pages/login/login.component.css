@@ -52,12 +52,12 @@ button {
 
 button:hover {
   background-color: var(--color-brand);
-  border-color: var(--color-brand);
+  border-color: var(--color-black);
 }
 
 button:active {
   background-color: var(--color-brand);
-  border-color: var(--color-brand);
+  border-color: var(--color-black);
 }
 
 button:disabled {
