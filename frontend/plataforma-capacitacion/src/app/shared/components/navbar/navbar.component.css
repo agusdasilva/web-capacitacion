@@ -76,3 +76,7 @@
   color: var(--color-brand);
 }
 
+.navbar__logo {
+  height: 40px;
+}
+
