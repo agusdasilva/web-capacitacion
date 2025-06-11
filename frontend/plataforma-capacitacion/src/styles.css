@@ -1,8 +1,5 @@
 @import './app/shared/styles/colors.css';
 
-.app-content {
-  padding-bottom: 3rem; /* espacio del footer */
-}
 
   /* 🔧 Reset básico del navegador */
 * {
