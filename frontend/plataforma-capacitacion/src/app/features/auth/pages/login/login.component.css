@@ -4,13 +4,16 @@
   align-items: center;
   height: 100vh;
   width: 100%;
-  background-color: #fff;
+  background-image: url('/img/490927947_1196119232521308_3084333383543494440_n.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .login-container {
-  background-color: #f3f3f3;
+  background-color: var(--color-bg-gray);
   padding: 2rem;
   border-radius: 8px;
+  border: 2px solid var(--color-black);
   width: 100%;
   max-width: 400px;
 }
@@ -27,8 +30,8 @@
 .login-container input {
   width: 100%;
   padding: 0.5rem;
-  border: 2px solid #000;
-  background-color: #f3f3f3;
+  border: 2px solid var(--color-black);
+  background-color: var(--color-white);
   border-radius: 4px;
   box-sizing: border-box;
 }
@@ -36,9 +39,9 @@
 button {
   display: block;
   margin: 0 auto;
-  background-color: #000;
-  color: #fff;
-  border: 2px solid #000;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: 2px solid var(--color-black);
   padding: 0.6rem 1.2rem;
   border-radius: 4px;
   cursor: pointer;
@@ -46,7 +49,8 @@ button {
 }
 
 button:hover {
-  background-color: red;
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
 }
 
 button:disabled {
