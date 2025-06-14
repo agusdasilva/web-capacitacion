@@ -1,1 +1,11 @@
-<p>listado-guias works!</p>
+<div class="lista-guias">
+  <h2>Guías disponibles</h2>
+  <div *ngIf="cargando">Cargando...</div>
+  <div *ngIf="!cargando && guias.length === 0">No hay guías disponibles.</div>
+  <ul *ngIf="!cargando">
+    <li *ngFor="let g of guias" (click)="abrir(g)" class="guia-item">
+      <strong>{{ g.titulo }}</strong>
+      <p *ngIf="g.descripcion">{{ g.descripcion }}</p>
+    </li>
+  </ul>
+</div>

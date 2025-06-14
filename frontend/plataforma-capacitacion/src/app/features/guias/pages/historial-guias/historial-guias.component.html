@@ -1,1 +1,11 @@
-<p>historial-guias works!</p>
+<div class="historial-guias">
+  <h2>Historial de guías vistas</h2>
+  <div *ngIf="cargando">Cargando...</div>
+  <div *ngIf="!cargando && vistas.length === 0">Aún no has visto ninguna guía.</div>
+  <ul *ngIf="!cargando">
+    <li *ngFor="let v of vistas" class="guia-vista-item">
+      <strong>{{ v.titulo }}</strong>
+      <p class="fecha">{{ v.fecha | date:'short' }}</p>
+    </li>
+  </ul>
+</div>
