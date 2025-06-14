@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { PreguntasService } from '../../../preguntas/services/preguntas.service';
 
 
 @Component({
   selector: 'app-responder-examen',
-  standalone: true,
-  imports: [CommonModule],
+  standalone: false,
   templateUrl: './responder-examen.component.html',
   styleUrls: ['./responder-examen.component.css']
 })

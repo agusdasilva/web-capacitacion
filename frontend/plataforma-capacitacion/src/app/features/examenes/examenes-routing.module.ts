@@ -7,8 +7,8 @@ const routes: Routes = [
   { path: ':id/preguntas', loadChildren: () =>
       import('../preguntas/preguntas.module').then(m => m.PreguntasModule)
   },
-  { path: 'responder/:id', loadComponent: () =>
-      import('./responder/pages/responder-examen/responder-examen.component').then(m => m.ResponderExamenComponent)
+  { path: 'responder/:id', loadChildren: () =>
+      import('./responder/responder.module').then(m => m.ResponderModule)
   }
 
 ];

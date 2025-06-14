@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-crear-examen',
-  standalone: true,
-  imports: [CommonModule],
+  standalone: false,
   templateUrl: './crear-examen.component.html',
   styleUrls: ['./crear-examen.component.css']
 })
