@@ -38,6 +38,8 @@ const estadisticasRoutes = require('./routes/estadisticas.routes');
 app.use('/api', estadisticasRoutes);
 const guiasVistasRoutes = require('./routes/guias_vistas.routes');
 app.use('/api', guiasVistasRoutes);
+const healthRoutes = require('./routes/health.routes');
+app.use('/api', healthRoutes);
 
 
 
